@@ -7,13 +7,11 @@ public class PlayerController : MonoBehaviour
     public event System.Action OnReachEndOfLevel;
 
     [SerializeField] private float moveSpeed = 0.5f;
-    [SerializeField] GameObject alienCenter;
 
     bool disabled;
 
     private void Start()
     {
-        alienCenter.GetComponent<Renderer>().enabled = false;
         GuardController.OnGuardHasSpottedPlayer += Disable;
     }
 
@@ -30,7 +28,6 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.Translate(mvX, 0f, mvZ);
-        alienCenter.transform.position = transform.position;
     }
 
     void Disable()
