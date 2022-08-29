@@ -170,6 +170,7 @@ public class GuardController : MonoBehaviour {
         {
 			Debug.Log("Left Click to Kill");
 			canKill = true;
+			gameObject.tag = "Dead Guard";
             
         }
     }
