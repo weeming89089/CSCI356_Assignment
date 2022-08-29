@@ -912,7 +912,7 @@ GameObject:
   - component: {fileID: 157967642}
   - component: {fileID: 157967641}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: L2Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5934,7 +5934,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 816512773}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 8.91, y: 20.78, z: 7.1}
+  m_LocalPosition: {x: 9.18, y: 20.78, z: 7.35}
   m_LocalScale: {x: 22, y: 11, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6051,7 +6051,7 @@ GameObject:
   - component: {fileID: 825177326}
   - component: {fileID: 825177325}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: L2Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7701,7 +7701,7 @@ GameObject:
   - component: {fileID: 1101703311}
   - component: {fileID: 1101703310}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: L2Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8651,7 +8651,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259035628}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -12.878, y: 0, z: 21.836}
+  m_LocalPosition: {x: -13.02, y: 0, z: 21.77}
   m_LocalScale: {x: 3, y: 2, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9307,7 +9307,7 @@ GameObject:
   - component: {fileID: 1389970211}
   - component: {fileID: 1389970210}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: L2Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11227,7 +11227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720754393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.23, y: 10.48, z: 12.07}
+  m_LocalPosition: {x: 5.15, y: 10.48, z: 12.18}
   m_LocalScale: {x: 30, y: 20, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14474,7 +14474,7 @@ GameObject:
   - component: {fileID: 2093065733}
   - component: {fileID: 2093065732}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: L2Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
