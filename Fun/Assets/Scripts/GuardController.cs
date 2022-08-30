@@ -11,6 +11,7 @@ public class GuardController : MonoBehaviour {
 	[SerializeField] float turnSpeed = 90f;
 
 	private Animator charAnim;
+	private AudioSource dieAudio;
 	private Transform guardTransf;
 	private Transform playerTransf;
 	public Transform pathHolder;
@@ -31,6 +32,7 @@ public class GuardController : MonoBehaviour {
 		playerTransf = GameObject.FindWithTag("Player").transform;
 		viewAngle = spotLight.spotAngle;
 		originalSpotLightColor = spotLight.color;
+		dieAudio = GetComponent<AudioSource>();
 
 		GameObject guard = GameObject.FindWithTag("Guard");
 		charAnim = GetComponent<Animator>();
@@ -79,9 +81,10 @@ public class GuardController : MonoBehaviour {
 				}
 			}
 
-			if (canKill && Input.GetMouseButton(0))
+			if (canKill && Input.GetMouseButton(0) && (dead==false))
 			{
 				charAnim.SetTrigger("die");
+				dieAudio.Play();
 				spotLight.enabled = false;
 				viewDistance = 0;
 				dead = true;

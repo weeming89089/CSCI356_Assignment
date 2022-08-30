@@ -23012,7 +23012,7 @@ GameObject:
   - component: {fileID: 1022011356}
   m_Layer: 0
   m_Name: Guard (NoHair_NoBeard_Helmet) (2)
-  m_TagString: Untagged
+  m_TagString: Guard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28678,7 +28678,7 @@ GameObject:
   - component: {fileID: 1312631664}
   m_Layer: 0
   m_Name: Guard (NoHair_NoBeard_Helmet) (3)
-  m_TagString: Untagged
+  m_TagString: Guard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34137,7 +34137,7 @@ GameObject:
   - component: {fileID: 1549308882}
   m_Layer: 0
   m_Name: Guard (NoHair_NoBeard_Helmet) (1)
-  m_TagString: Untagged
+  m_TagString: Guard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37652,7 +37652,7 @@ GameObject:
   - component: {fileID: 1725672146}
   m_Layer: 0
   m_Name: Guard (NoHair_NoBeard_Helmet) (4)
-  m_TagString: Untagged
+  m_TagString: Guard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43608,7 +43608,7 @@ GameObject:
   - component: {fileID: 1960483607}
   m_Layer: 0
   m_Name: Guard (NoHair_NoBeard_Helmet)
-  m_TagString: Untagged
+  m_TagString: Guard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
