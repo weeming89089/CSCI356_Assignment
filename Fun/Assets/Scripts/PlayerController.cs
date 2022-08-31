@@ -49,6 +49,6 @@ public class PlayerController : MonoBehaviour
 
     void OnDestroy()
     {
-        GuardController.OnGuardHasSpottedPlayer -= Disable;
+        Guard.OnGuardHasSpottedPlayer -= Disable;
     }
 }

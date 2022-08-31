@@ -10,6 +10,7 @@ public class Guard : MonoBehaviour
     public Transform pathHolder;
     public Animator charAnim;
     public Light spotLight;
+    private AudioSource dieAudio;
 
     private Color originalSpotlightColor;
     public LayerMask viewMask;
@@ -31,6 +32,7 @@ public class Guard : MonoBehaviour
         viewAngle = spotLight.spotAngle;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         originalSpotlightColor = spotLight.color;
+        dieAudio = GetComponent<AudioSource>();
 
         Vector3[] waypoints = new Vector3[pathHolder.childCount];
 
@@ -70,10 +72,14 @@ public class Guard : MonoBehaviour
 
         if (canKill && Input.GetMouseButton(0))
         {
+            if (dead == false)
+                dieAudio.Play();
+
             dead = true;
             spotLight.enabled = false;
             viewDistance = 0;
             charAnim.SetTrigger("die");
+            gameObject.tag = "Dead Guard";
         }
     }
 
