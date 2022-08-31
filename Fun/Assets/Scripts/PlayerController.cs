@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        GuardController.OnGuardHasSpottedPlayer += Disable;
+        Guard.OnGuardHasSpottedPlayer += Disable;
     }
 
     // Update is called once per frame
