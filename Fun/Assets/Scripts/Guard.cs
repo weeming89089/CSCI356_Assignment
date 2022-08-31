@@ -10,7 +10,9 @@ public class Guard : MonoBehaviour
     public Transform pathHolder;
     public Animator charAnim;
     public Light spotLight;
+    public GameObject canKillUI;
     private AudioSource dieAudio;
+    private BoxCollider boxCollider;
 
     private Color originalSpotlightColor;
     public LayerMask viewMask;
@@ -31,6 +33,7 @@ public class Guard : MonoBehaviour
         charAnim = GetComponent<Animator>();
         viewAngle = spotLight.spotAngle;
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        boxCollider = GetComponent<BoxCollider>();
         originalSpotlightColor = spotLight.color;
         dieAudio = GetComponent<AudioSource>();
 
@@ -70,16 +73,20 @@ public class Guard : MonoBehaviour
             }
         }
 
-        if (canKill && Input.GetMouseButton(0))
+        if (canKill && !dead && Input.GetMouseButtonDown(0))
         {
-            if (dead == false)
-                dieAudio.Play();
-
+            dieAudio.Play();
             dead = true;
             spotLight.enabled = false;
             viewDistance = 0;
+            GameUI.guardsCount = GameUI.guardsCount - 1;
+            canKillUI.SetActive(false);
+        }
+
+        if (dead)
+        {
             charAnim.SetTrigger("die");
-            gameObject.tag = "Dead Guard";
+            boxCollider.enabled = false;
         }
     }
 
@@ -163,7 +170,7 @@ public class Guard : MonoBehaviour
         {
             Debug.Log("Left Click To Kill");
             canKill = true;
-            //Debug.Log(canKill);
+            canKillUI.SetActive(true);
         }
     }
 
@@ -173,7 +180,7 @@ public class Guard : MonoBehaviour
         {
             Debug.Log("Left Kill Zone");
             canKill = false;
-            //Debug.Log(canKill);
+            canKillUI.SetActive(false);
         }
     }
 }

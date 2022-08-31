@@ -8,7 +8,6 @@ public class RotationController : MonoBehaviour
     [SerializeField] private float VerticalSens = 3.0f;
 
     private Vector3 offset;
-    private float smoothFactor = 0.5f;
     private bool lookAtTarget = true;
     float HorizontalRot;
     float VerticalRot;
@@ -40,14 +39,6 @@ public class RotationController : MonoBehaviour
 
         character.transform.rotation = camRot;
         pivot.transform.rotation = playerRot;
-
-
-
-        //Vector2 mouseMove = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
-
-        //mouseMove = Vector2.Scale(mouseMove, new Vector2(HorizontalSens, VerticalSens));
-        //character.transform.Rotate(0, mouseMove.x, 0); 
-        //pivot.transform.Rotate(-mouseMove.y, 0, 0);
 
 
         if (Input.GetKeyDown(KeyCode.Escape))
