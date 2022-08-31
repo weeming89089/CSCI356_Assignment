@@ -48,6 +48,7 @@ public class GuardController : MonoBehaviour {
         {
 			StartCoroutine(followPath(waypoints));
 		}
+
 	}
 	
 

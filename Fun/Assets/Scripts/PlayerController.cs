@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider hitCollider)
     {
-        if (hitCollider.tag == "Finish")
+        if ((hitCollider.tag == "Finish") && (GameObject.FindGameObjectsWithTag("Guard").Length <= 0))
         {
             Disable();
             if (OnReachEndOfLevel != null)
